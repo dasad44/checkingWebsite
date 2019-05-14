@@ -1,0 +1,7 @@
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\bin\Debug\EmailSendingLib.dll.config
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\bin\Debug\EmailSendingLib.dll
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\bin\Debug\EmailSendingLib.pdb
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\obj\Debug\EmailSendingLib.csprojAssemblyReference.cache
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\obj\Debug\EmailSendingLib.csproj.CoreCompileInputs.cache
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\obj\Debug\EmailSendingLib.dll
+C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\obj\Debug\EmailSendingLib.pdb
