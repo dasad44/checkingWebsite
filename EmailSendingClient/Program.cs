@@ -20,7 +20,7 @@ namespace EmailSendingClient
 
         public static void Main(string[] args)
         {
-            Timer timer = new Timer(20000);
+            Timer timer = new Timer(300000);
             timer.Elapsed += new ElapsedEventHandler(OnTimedEvent); //Wywołuje event po upływie czasu z timera
             timer.AutoReset = true;
             timer.Enabled = true;
