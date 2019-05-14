@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Net.Sockets;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
@@ -18,7 +19,7 @@ namespace EmailSendingLib
             SmtpClient client = new SmtpClient(host, port);
             client.DeliveryMethod = SmtpDeliveryMethod.Network;
             client.EnableSsl = true;
-            client.UseDefaultCredentials = false;
+            client.UseDefaultCredentials = false; 
             client.Credentials = new NetworkCredential(email, emailPassword);
             MailAddress from = new MailAddress(email, "WCF SERVICE", Encoding.UTF8);
             MailAddress to = new MailAddress(targetEmail);
@@ -29,5 +30,11 @@ namespace EmailSendingLib
             };
            client.Send(mail);
         }
+
+        /*public void Connect(string address, int port)
+        {
+            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            socket.Connect(address, port);
+        }*/
     }
 }

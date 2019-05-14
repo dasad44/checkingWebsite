@@ -14,5 +14,7 @@ namespace EmailSendingLib
     {
         [OperationContract]
         void SendEmail(string email, string emailPassword, string subject, string content, string targetEmail);
+        //[OperationContract]
+        //void Connect(string address, int port);
     }
 }

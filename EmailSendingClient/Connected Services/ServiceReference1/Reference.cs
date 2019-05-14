@@ -20,6 +20,12 @@ namespace EmailSendingClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSend/SendEmail", ReplyAction="http://tempuri.org/IEmailSend/SendEmailResponse")]
         System.Threading.Tasks.Task SendEmailAsync(string email, string emailPassword, string subject, string content, string targetEmail);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSend/Connect", ReplyAction="http://tempuri.org/IEmailSend/ConnectResponse")]
+        void Connect(string address, int port);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEmailSend/Connect", ReplyAction="http://tempuri.org/IEmailSend/ConnectResponse")]
+        System.Threading.Tasks.Task ConnectAsync(string address, int port);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace EmailSendingClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task SendEmailAsync(string email, string emailPassword, string subject, string content, string targetEmail) {
             return base.Channel.SendEmailAsync(email, emailPassword, subject, content, targetEmail);
+        }
+        
+        public void Connect(string address, int port) {
+            base.Channel.Connect(address, port);
+        }
+        
+        public System.Threading.Tasks.Task ConnectAsync(string address, int port) {
+            return base.Channel.ConnectAsync(address, port);
         }
     }
 }

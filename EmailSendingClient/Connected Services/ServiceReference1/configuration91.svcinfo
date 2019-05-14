@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="TFshu+/IO2XWAoEofbqm1jrQqzU=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="nxCHaM/iADhuisNRZJ5Mc1Teg44=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="wsHttpBinding" name="WSHttpBinding_IEmailSend">
       <properties>
@@ -127,10 +127,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="WSHttpBinding_IEmailSend" contract="ServiceReference1.IEmailSend" bindingType="wsHttpBinding" address="http://localhost/IISHostedEmailSending/Service.svc" bindingConfiguration="WSHttpBinding_IEmailSend">
+    <endpoint name="WSHttpBinding_IEmailSend" contract="ServiceReference1.IEmailSend" bindingType="wsHttpBinding" address="http://localhost/IISHostedEmailSender/Service.svc" bindingConfiguration="WSHttpBinding_IEmailSend">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost/IISHostedEmailSending/Service.svc</serializedValue>
+          <serializedValue>http://localhost/IISHostedEmailSender/Service.svc</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

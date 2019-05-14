@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="acdda8f3-d0c8-46d4-a528-ace94b872722" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="72937d1a-07f2-4362-8ade-7ab6066f5958" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,12 +19,12 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/IISHostedEmailSending/Service.svc/mex" Protocol="mex" SourceId="1" />
+    <MetadataSource Address="http://localhost/IISHostedEmailSender/Service.svc/mex" Protocol="mex" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="96daf058-4474-4c98-97ce-9c177080c5c6" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSending/Service.svc/mex" />
-    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="ce100970-316f-4199-bbd5-2e2988dbe497" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSending/Service.svc/mex" />
-    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="ff1fda95-8447-4a7d-8ec8-f635cffb8588" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSending/Service.svc/mex" />
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="59ccddae-6c23-4d49-867b-3e066b534f36" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSender/Service.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="628907e3-3831-4db7-9916-c09ccec5166a" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSender/Service.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="a56ba18c-b310-4fb1-b77d-148ab12fbd9d" SourceId="1" SourceUrl="http://localhost/IISHostedEmailSender/Service.svc/mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
