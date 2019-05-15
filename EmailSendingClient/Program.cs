@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Net.NetworkInformation;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
@@ -14,14 +15,14 @@ namespace EmailSendingClient
     public class Program
     {
         static EmailSendClient client = new EmailSendClient();
-        static int sent = 0;
+        static int sent = 0; //Zmienna licząca liczbę wysłanych maili błędu strony
         //static string address = "192.168.11.150";
         //static int port = 800;
 
         public static void Main(string[] args)
         {
-            Timer timer = new Timer(300000);
-            Timer mailTimer = new Timer(60000);
+            Timer timer = new Timer(300000); //Timer odpowiedzialny za sprawdzanie połączenia z 192.168.11.150:800 i ewentualne poinformowanie o błędzie
+            Timer mailTimer = new Timer(60000); //Timer odpowiedzialny za wysłanie maili o prawidłowym działaniu usługi
 
             timer.Elapsed += new ElapsedEventHandler(OnTimedEvent); //Wywołuje event po upływie czasu z timera
             timer.AutoReset = true;
@@ -60,7 +61,7 @@ namespace EmailSendingClient
                 {
                     if (ex is WebException || ex is TimeoutException)
                     {
-                        if (sent < 1)
+                        if (sent < 1) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
                             client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "pawel.lukasiak@coloursfactory.pl"); //Wysyła emaila
                         sent++;
                         Console.WriteLine("Error! " + ex.Message);
@@ -74,7 +75,7 @@ namespace EmailSendingClient
 
         public static void SendControlEmail(object sender, ElapsedEventArgs e)
         {
-            if (DateTime.Now.Minute == 00)
+            if (DateTime.Now.Minute == 00) //Sprawdza czy godzina jest pełna
             {
                 if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
                 {
