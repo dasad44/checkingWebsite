@@ -21,9 +21,15 @@ namespace EmailSendingClient
         public static void Main(string[] args)
         {
             Timer timer = new Timer(300000);
+            Timer mailTimer = new Timer(60000);
+
             timer.Elapsed += new ElapsedEventHandler(OnTimedEvent); //Wywołuje event po upływie czasu z timera
             timer.AutoReset = true;
             timer.Enabled = true;
+
+            mailTimer.Elapsed += new ElapsedEventHandler(SendControlEmail);
+            mailTimer.AutoReset = true;
+            mailTimer.Enabled = true;
             /*try
             {
                 Console.WriteLine("Estabilishing connection to {0}:{1}", address, port);
@@ -45,25 +51,42 @@ namespace EmailSendingClient
             using (var wClient = new WebClient())
             {
                 try
-                {              
+                {
                     string url = wClient.DownloadString("http://192.168.11.150:800/index.php"); //Łączy się ze stroną internetową
-                    Console.WriteLine("No jest Git");
+                    Console.WriteLine("Połączono ze stroną!");
                     sent = 0;
-                    //Console.WriteLine("Done!");
                 }
                 catch (Exception ex)
                 {
                     if (ex is WebException || ex is TimeoutException)
                     {
                         if (sent < 1)
-                            client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
+                            client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "pawel.lukasiak@coloursfactory.pl"); //Wysyła emaila
                         sent++;
                         Console.WriteLine("Error! " + ex.Message);
-                        //Console.WriteLine("Error: {0}", ex.Message);
                         Console.ReadLine();
                     }
                     else
                         Console.WriteLine("Nieznany błąd");
+                }
+            }
+        }
+
+        public static void SendControlEmail(object sender, ElapsedEventArgs e)
+        {
+            if (DateTime.Now.Minute == 00)
+            {
+                if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
+                {
+                    try
+                    {
+                        client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Stan usługi", "Usługa działa!", "pawel.lukasiak@coloursfactory.pl");
+                        Console.WriteLine("Email o stanie usługi został wysłany!");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Error: {0}", ex.Message);
+                    }
                 }
             }
         }
