@@ -21,7 +21,7 @@ namespace EmailSendingClient
 
         public static void Main(string[] args)
         {
-            Timer timer = new Timer(10010); //Timer odpowiedzialny za sprawdzanie połączenia z 192.168.11.150:800 i ewentualne poinformowanie o błędzie
+            Timer timer = new Timer(300000); //Timer odpowiedzialny za sprawdzanie połączenia z 192.168.11.150:800 i ewentualne poinformowanie o błędzie
             Timer mailTimer = new Timer(60000); //Timer odpowiedzialny za wysłanie maili o prawidłowym działaniu usługi
 
             timer.Elapsed += new ElapsedEventHandler(OnTimedEvent); //Wywołuje event po upływie czasu z timera
