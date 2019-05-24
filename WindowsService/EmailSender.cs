@@ -1,25 +1,20 @@
-﻿using EmailSendingClient.ServiceReference1;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Mail;
-using System.Net.NetworkInformation;
-using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using WindowsService.ServiceReference1;
 
-namespace EmailSendingClient
+namespace WindowsService
 {
-    public class Program
+    public class EmailSender
     {
         static EmailSendClient client = new EmailSendClient();
         static int sent = 0; //Zmienna licząca liczbę wysłanych maili błędu strony
-        //static string address = "192.168.11.150";
-        //static int port = 800;
 
-        public static void Main(string[] args)
+        public static void Timers()
         {
             Timer timer = new Timer(300000); //Timer odpowiedzialny za sprawdzanie połączenia z 192.168.11.150:800 i ewentualne poinformowanie o błędzie
             Timer mailTimer = new Timer(60010); //Timer odpowiedzialny za wysłanie maili o prawidłowym działaniu usługi
@@ -40,13 +35,12 @@ namespace EmailSendingClient
             catch (TypeInitializationException e)
             {
                 Console.WriteLine("Error: {0}", e.Message);
-            }*/
+            }
             Console.WriteLine("Press <Enter> to terminate...");
             Console.ReadLine();
             client.Close();
-            Console.ReadKey();
+            Console.ReadKey();*/
         }
-
         //pawel.lukasiak@coloursfactory.pl
         public static void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
@@ -67,7 +61,7 @@ namespace EmailSendingClient
                             client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
                         sent++;
                         Console.WriteLine("Error! " + ex.Message);
-                        Console.ReadLine();
+                        //Console.ReadLine();
                     }
                     else
                         Console.WriteLine("Nieznany błąd");
@@ -78,9 +72,9 @@ namespace EmailSendingClient
         //pawel.lukasiak@coloursfactory.pl
         public static void SendControlEmail(object sender, ElapsedEventArgs e)
         {
-            if (DateTime.Now.Minute == 00) //Sprawdza czy godzina jest pełna
+            //if (DateTime.Now.Minute == 00) //Sprawdza czy godzina jest pełna
             {
-                if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
+                //if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
                 {
                     try
                     {
@@ -93,6 +87,11 @@ namespace EmailSendingClient
                     }
                 }
             }
+        }
+
+        public static void Close()
+        {
+            client.Close();
         }
     }
 }
