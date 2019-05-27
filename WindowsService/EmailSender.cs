@@ -35,7 +35,7 @@ namespace WindowsService
                 try
                 {
                     string url = wClient.DownloadString("http://192.168.11.150:800/index.php"); //Łączy się ze stroną internetową
-                    //Console.WriteLine("Połączono ze stroną!");
+                    Console.WriteLine("Połączono ze stroną!");
                     ifSent = true;
                 }
                 catch (Exception ex)
@@ -45,8 +45,8 @@ namespace WindowsService
                         if (ifSent == true) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
                             client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
                         ifSent = false;
-                        //Console.WriteLine("Error! " + ex.Message);
-                        //Console.ReadLine();
+                        Console.WriteLine("Error! " + ex.Message);
+                        Console.ReadLine();
                     }
                     else
                         Console.WriteLine("Nieznany błąd");
