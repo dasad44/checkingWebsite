@@ -4,3 +4,10 @@ C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\bin\Release\EmailSending
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.csproj.CoreCompileInputs.cache
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.dll
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.pdb
+C:\4781874516\EmailSendingLib\bin\Release\EmailSendingLib.dll.config
+C:\4781874516\EmailSendingLib\bin\Release\EmailSendingLib.dll
+C:\4781874516\EmailSendingLib\bin\Release\EmailSendingLib.pdb
+C:\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.csprojAssemblyReference.cache
+C:\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.csproj.CoreCompileInputs.cache
+C:\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.dll
+C:\4781874516\EmailSendingLib\obj\Release\EmailSendingLib.pdb

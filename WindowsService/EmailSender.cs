@@ -14,6 +14,12 @@ namespace WindowsService
         static EmailSendClient client = new EmailSendClient();
         static bool ifSent; //Zmienna licząca liczbę wysłanych maili błędu strony
 
+        /*
+         * 
+         *  W razie problemów sprawdź adres do usługi w endpoint address w pliku App.config w WindowsService oraz EmailSendingLib  
+         * 
+         */
+
         public static void Timers()
         {
             Timer timer = new Timer(300000); //Timer odpowiedzialny za sprawdzanie połączenia z 192.168.11.150:800 i ewentualne poinformowanie o błędzie
@@ -27,7 +33,7 @@ namespace WindowsService
             mailTimer.AutoReset = true;
             mailTimer.Enabled = true;
         }
-        //pawel.lukasiak@coloursfactory.pl
+        
         public static void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
             using (var wClient = new WebClient())
@@ -43,7 +49,7 @@ namespace WindowsService
                     if (ex is WebException || ex is TimeoutException)
                     {
                         if (ifSent == true) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
-                            client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
+                            client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "pawel.lukasiak@coloursfactory.pl"); //Wysyła emaila
                         ifSent = false;
                         Console.WriteLine("Error! " + ex.Message);
                         Console.ReadLine();
@@ -62,7 +68,7 @@ namespace WindowsService
                 {
                     try
                     {
-                        client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Stan usługi", "Usługa działa!", "mateusz.wnuk06@gmail.com");
+                        client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Stan usługi", "Usługa działa!", "pawel.lukasiak@coloursfactory.pl");
                         Console.WriteLine("Email o stanie usługi został wysłany!");
                     }
                     catch (Exception ex)

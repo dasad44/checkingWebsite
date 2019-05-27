@@ -95,3 +95,16 @@ Uwzględnione parametry to:
    logtoconsole = 
    logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
    assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Instalowanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Trwa instalowanie usługi MojaUsluga...
+Trwa tworzenie źródła EventLog MojaUsluga w dzienniku Application...
+Wycofywanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Przywracanie dziennika zdarzeń do poprzedniego stanu dla źródła MojaUsluga.
