@@ -12,7 +12,7 @@ namespace WindowsService
     public class EmailSender
     {
         static EmailSendClient client = new EmailSendClient();
-        static int sent = 0; //Zmienna licząca liczbę wysłanych maili błędu strony
+        static bool ifSent; //Zmienna licząca liczbę wysłanych maili błędu strony
 
         public static void Timers()
         {
@@ -26,32 +26,25 @@ namespace WindowsService
             mailTimer.Elapsed += new ElapsedEventHandler(SendControlEmail);
             mailTimer.AutoReset = true;
             mailTimer.Enabled = true;
-
-
-            /*Console.WriteLine("Press <Enter> to terminate...");
-            Console.ReadLine();
-            client.Close();
-            Console.ReadKey();*/
         }
         //pawel.lukasiak@coloursfactory.pl
         public static void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
-
             using (var wClient = new WebClient())
             {
                 try
                 {
                     string url = wClient.DownloadString("http://192.168.11.150:800/index.php"); //Łączy się ze stroną internetową
                     //Console.WriteLine("Połączono ze stroną!");
-                    sent = 0;
+                    ifSent = true;
                 }
                 catch (Exception ex)
                 {
                     if (ex is WebException || ex is TimeoutException)
                     {
-                        if (sent < 1) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
+                        if (ifSent == true) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
                             client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
-                        sent++;
+                        ifSent = false;
                         //Console.WriteLine("Error! " + ex.Message);
                         //Console.ReadLine();
                     }
@@ -60,7 +53,6 @@ namespace WindowsService
                 }
             }
         }
-
         //pawel.lukasiak@coloursfactory.pl
         public static void SendControlEmail(object sender, ElapsedEventArgs e)
         {

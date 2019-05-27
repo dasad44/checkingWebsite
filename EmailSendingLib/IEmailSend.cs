@@ -8,7 +8,6 @@ using System.Text;
 
 namespace EmailSendingLib
 {
-    // UWAGA: możesz użyć polecenia „Zmień nazwę” w menu „Refaktoryzuj”, aby zmienić nazwę interfejsu „IService1” w kodzie i pliku konfiguracji.
     [ServiceContract]
     public interface IEmailSend
     {

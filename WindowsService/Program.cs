@@ -9,9 +9,6 @@ namespace WindowsService
 {
     static class Program
     {
-        /// <summary>
-        /// Główny punkt wejścia dla aplikacji.
-        /// </summary>
         static void Main()
         {
 #if DEBUG

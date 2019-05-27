@@ -30,11 +30,5 @@ namespace EmailSendingLib
             };
            client.Send(mail);
         }
-
-        /*public void Connect(string address, int port)
-        {
-            Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            socket.Connect(address, port);
-        }*/
     }
 }
