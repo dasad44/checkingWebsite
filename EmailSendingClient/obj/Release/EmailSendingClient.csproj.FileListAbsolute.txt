@@ -1,7 +1,0 @@
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\bin\Release\EmailSendingClient.exe.config
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\bin\Release\EmailSendingClient.exe
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\bin\Release\EmailSendingClient.pdb
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\obj\Release\EmailSendingClient.csprojAssemblyReference.cache
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\obj\Release\EmailSendingClient.csproj.CoreCompileInputs.cache
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\obj\Release\EmailSendingClient.exe
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingClient\obj\Release\EmailSendingClient.pdb
