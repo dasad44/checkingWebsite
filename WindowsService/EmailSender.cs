@@ -26,17 +26,9 @@ namespace WindowsService
             mailTimer.Elapsed += new ElapsedEventHandler(SendControlEmail);
             mailTimer.AutoReset = true;
             mailTimer.Enabled = true;
-            /*try
-            {
-                Console.WriteLine("Estabilishing connection to {0}:{1}", address, port);
-                client.Connect(address, port);
-                Console.WriteLine("Connection estabilished.");
-            }
-            catch (TypeInitializationException e)
-            {
-                Console.WriteLine("Error: {0}", e.Message);
-            }
-            Console.WriteLine("Press <Enter> to terminate...");
+
+
+            /*Console.WriteLine("Press <Enter> to terminate...");
             Console.ReadLine();
             client.Close();
             Console.ReadKey();*/
@@ -50,7 +42,7 @@ namespace WindowsService
                 try
                 {
                     string url = wClient.DownloadString("http://192.168.11.150:800/index.php"); //Łączy się ze stroną internetową
-                    Console.WriteLine("Połączono ze stroną!");
+                    //Console.WriteLine("Połączono ze stroną!");
                     sent = 0;
                 }
                 catch (Exception ex)
@@ -60,7 +52,7 @@ namespace WindowsService
                         if (sent < 1) //Sprawdza czy mail został już wysłany/ pojedyncze wyslanie
                             client.SendEmail("wcfemailsender@gmail.com", "P@ssw0rd_", "Błąd", "Strona 192.168.11.150:800 nie działa poprawnie!", "mateusz.wnuk06@gmail.com"); //Wysyła emaila
                         sent++;
-                        Console.WriteLine("Error! " + ex.Message);
+                        //Console.WriteLine("Error! " + ex.Message);
                         //Console.ReadLine();
                     }
                     else
@@ -72,9 +64,9 @@ namespace WindowsService
         //pawel.lukasiak@coloursfactory.pl
         public static void SendControlEmail(object sender, ElapsedEventArgs e)
         {
-            //if (DateTime.Now.Minute == 00) //Sprawdza czy godzina jest pełna
+            if (DateTime.Now.Minute == 00) //Sprawdza czy godzina jest pełna
             {
-                //if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
+                if (DateTime.Now.Hour == 9 || DateTime.Now.Hour == 12)
                 {
                     try
                     {

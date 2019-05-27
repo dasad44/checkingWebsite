@@ -8,7 +8,6 @@ C:\Users\mateuszwnuk\Desktop\EmailSending\EmailSendingLib\obj\Debug\EmailSending
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\bin\Debug\EmailSendingLib.dll.config
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\bin\Debug\EmailSendingLib.dll
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\bin\Debug\EmailSendingLib.pdb
-C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Debug\EmailSendingLib.csprojAssemblyReference.cache
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Debug\EmailSendingLib.csproj.CoreCompileInputs.cache
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Debug\EmailSendingLib.dll
 C:\Users\mateuszwnuk\Desktop\4781874516\EmailSendingLib\obj\Debug\EmailSendingLib.pdb

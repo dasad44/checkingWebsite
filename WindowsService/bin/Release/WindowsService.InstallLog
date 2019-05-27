@@ -1,0 +1,84 @@
+﻿Instalowanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Trwa instalowanie usługi MojaUsluga...
+Trwa tworzenie źródła EventLog MojaUsluga w dzienniku Application...
+Wycofywanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Przywracanie dziennika zdarzeń do poprzedniego stanu dla źródła MojaUsluga.
+Instalowanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Trwa instalowanie usługi MojaUsluga...
+Usługa MojaUsluga została zainstalowana pomyślnie.
+Trwa tworzenie źródła EventLog MojaUsluga w dzienniku Application...
+Zatwierdzanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Odinstalowywanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Usuwanie źródła EventLog MojaUsluga.
+Trwa usuwanie usługi MojaUsluga z systemu...
+Usługa MojaUsluga została pomyślnie usunięta z systemu.
+Próba zatrzymania usługi MojaUsluga.
+Odinstalowywanie zestawu 'C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Release\WindowsService.exe
+Usuwanie źródła EventLog MojaUsluga.
+Ostrzeżenie: źródło MojaUsluga nie jest zarejestrowane na komputerze lokalnym.
+Trwa usuwanie usługi MojaUsluga z systemu...
+Usługa MojaUsluga została pomyślnie usunięta z systemu.
+Próba zatrzymania usługi MojaUsluga.
+Odinstalowywanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Usuwanie źródła EventLog MojaUsluga.
+Ostrzeżenie: źródło MojaUsluga nie jest zarejestrowane na komputerze lokalnym.
+Trwa usuwanie usługi MojaUsluga z systemu...
+Usługa MojaUsluga została pomyślnie usunięta z systemu.
+Odinstalowywanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Usuwanie źródła EventLog MojaUsluga.
+Ostrzeżenie: źródło MojaUsluga nie jest zarejestrowane na komputerze lokalnym.
+Trwa usuwanie usługi MojaUsluga z systemu...
+Usługa MojaUsluga została pomyślnie usunięta z systemu.
+Instalowanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Trwa instalowanie usługi MojaUsluga...
+Usługa MojaUsluga została zainstalowana pomyślnie.
+Trwa tworzenie źródła EventLog MojaUsluga w dzienniku Application...
+Zatwierdzanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Odinstalowywanie zestawu 'C:\4781874516\WindowsService\bin\Release\WindowsService.exe'.
+Uwzględnione parametry to:
+   logtoconsole = 
+   logfile = C:\4781874516\WindowsService\bin\Release\WindowsService.InstallLog
+   assemblypath = C:\4781874516\WindowsService\bin\Release\WindowsService.exe
+Usuwanie źródła EventLog MojaUsluga.
+Trwa usuwanie usługi MojaUsluga z systemu...
+Usługa MojaUsluga została pomyślnie usunięta z systemu.

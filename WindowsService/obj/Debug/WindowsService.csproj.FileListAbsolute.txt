@@ -1,4 +1,3 @@
-C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.csprojAssemblyReference.cache
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.csproj.CoreCompileInputs.cache
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Debug\WindowsService.exe.config
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\bin\Debug\WindowsService.exe
@@ -7,3 +6,13 @@ C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.pdb
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.ProjectInstaller.resources
 C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.csproj.GenerateResource.cache
+C:\Users\mateuszwnuk\Desktop\4781874516\WindowsService\obj\Debug\WindowsService.csprojAssemblyReference.cache
+C:\4781874516\WindowsService\bin\Debug\WindowsService.exe.config
+C:\4781874516\WindowsService\bin\Debug\WindowsService.exe
+C:\4781874516\WindowsService\bin\Debug\WindowsService.pdb
+C:\4781874516\WindowsService\obj\Debug\WindowsService.csprojAssemblyReference.cache
+C:\4781874516\WindowsService\obj\Debug\WindowsService.ProjectInstaller.resources
+C:\4781874516\WindowsService\obj\Debug\WindowsService.csproj.GenerateResource.cache
+C:\4781874516\WindowsService\obj\Debug\WindowsService.csproj.CoreCompileInputs.cache
+C:\4781874516\WindowsService\obj\Debug\WindowsService.exe
+C:\4781874516\WindowsService\obj\Debug\WindowsService.pdb
